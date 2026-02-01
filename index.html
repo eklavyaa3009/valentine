@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Valentine 💖</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            padding-top: 120px;
+        }
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            margin: 20px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+        }
+        #no {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Will you be my forever Valentine BHOOMI TIWARI?</h1> 💘
+<h2>PS- you don`t have no as an option even if you want to click</h2>
+
+<button onclick="location.href='page2.html'">YES 💕</button>
+<button id="no" onmouseover="move()">No 😢</button>
+
+<script>
+function move() {
+    const no = document.getElementById("no");
+    no.style.left = Math.random() * (window.innerWidth - 100) + "px";
+    no.style.top = Math.random() * (window.innerHeight - 50) + "px";
+}
+</script>
+
+</body>
+</html>
